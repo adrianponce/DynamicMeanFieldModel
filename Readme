@@ -1,0 +1,14 @@
+DMF (Deco, Ponce-Alvarez et al., 2013)
+
+- DMF_DecoEtAl2013.m  runs the main simulation of the whole-brain network.
+- Bold.m  transforms the synaptic activity into Bold signals
+- Human_66.mat contains the connectivity data
+- EmpiricalFC.mat contains the functional connectivity
+
+FIC (Deco, Ponce-Alvarez et al., 2014)
+
+- Get_balanced_weights.m : estimates the inhibition-to-excitation couplings so that the system has a firing rate ~3 Hz, for varying global couplings. 
+- BOLD_HemModel.m : this function transforms neural activity into BOLD using Friston's hemodynamic model.
+- Bold_FC_prediction_FIC.m : calculates the fitting between the model FC and the empirical FC for varying global couplings.
+- FC_prediction_LNA.m : uses the linear noise approximation to calculate the fitting between the model FC and the empirical FC for varying global couplings.
+- Human_66.mat : some human DTI and FC data, from Patric Hagmann's laboratory, to test the model.
